@@ -11,14 +11,14 @@ const toggleTransform = () => {
 
 <template>
   <header>
-    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8 ">
       <h1 class="text-[40px]">Portfolio</h1>
 
       <div class="w-full h-[100px]"></div>
 
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <!-- Left column -->
-        <div>
+        <div class="w-5/10 mt-2">
           <div class="w-[350px]">
             <div class="text-[30px]">Hi, I'm Mony</div>
             <div class="text-[20px] py-2 font-bold">Software Developer</div>
@@ -28,7 +28,7 @@ const toggleTransform = () => {
             </div>
             <div class="h-[80px]"></div>
             <div>
-              <button class="px-4 py-4 bg-gray-200 w-[400px] rounded-lg text-left">
+              <button class="px-4 py-4 bg-gray-200 rounded-lg text-left">
                 <div class="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
@@ -41,11 +41,10 @@ const toggleTransform = () => {
         </div>
 
         <!-- Right column -->
-        <div>
-          <div class="rounded-full w-[300px] h-[300px] bg-gray-300 flex items-center justify-center">
+        <div class="w-5/10 w-full bg-gray-100">
+          <div class="rounded-lg h-[200px] ">
             <img
-              src="https://via.placeholder.com/200"
-              class="rounded-full w-[200px] h-[200px] object-cover"
+              class=""
               alt="Mony's photo"
             />
           </div>
