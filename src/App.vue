@@ -12,12 +12,20 @@ const toggleTransform = () => {
 <template>
   <header>
     <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8 ">
-      <h1 class="text-[40px]">Portfolio</h1>
+      <!-- <h1 class="text-[40px]">Portfolio</h1> -->
 
       <div class="w-full h-[100px]"></div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <!-- Left column -->
+         <div class="w-5/10 w-full bg-gray-100">
+          <div class="rounded-lg h-[200px] ">
+            <img
+              class=""
+              alt="Mony's photo"
+            />
+          </div>
+        </div>
         <div class="w-5/10 mt-2">
           <div class="w-[350px]">
             <div class="text-[30px]">Hi, I'm Mony</div>
@@ -41,14 +49,7 @@ const toggleTransform = () => {
         </div>
 
         <!-- Right column -->
-        <div class="w-5/10 w-full bg-gray-100">
-          <div class="rounded-lg h-[200px] ">
-            <img
-              class=""
-              alt="Mony's photo"
-            />
-          </div>
-        </div>
+        
       </div>
     </div>
   </header>
