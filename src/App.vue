@@ -13,7 +13,6 @@ interface Repo {
   description: string | null;
   html_url: string;
 }
-const token = import.meta.env.VITE_GITHUB_TOKEN;
 
 const repository = ref<Repo[]>([]);
 const toggleTransform = () => {
@@ -25,7 +24,7 @@ const displayModal = () => {
 
 const fetchData = async () => {
   const url = 'https://api.github.com/users/dramonyyem/repos';
-  const token = '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';
+  const token = import.meta.env.VITE_API_KEY;
   try { 
     const response = await fetch(url, {
           headers: {
