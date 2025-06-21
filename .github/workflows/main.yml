@@ -1,0 +1,32 @@
+name: Build and Deploy Vue App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '23'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Inject environment variables
+        run: |
+          echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" >> .env
+          echo "VITE_API_KEY=${{ secrets.VITE_API_KEY }}" >> .env
+
+      - name: Build project
+        run: npm run build
+
+      # Optional: Add deployment steps here (Netlify, Firebase, FTP, etc.)
