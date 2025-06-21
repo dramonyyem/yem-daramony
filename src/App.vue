@@ -23,7 +23,7 @@ const displayModal = () => {
 };
 
 const fetchData = async () => {
-  const url = 'https://api.github.com/users/dramonyyem/repos';
+  const url = import.meta.env.VITE_API_URL;
   const token = import.meta.env.VITE_API_KEY;
   try { 
     const response = await fetch(url, {
