@@ -23,20 +23,20 @@ const displayModal = () => {
 };
 
 const fetchData = async () => {
-  const url = import.meta.env.VITE_API_URL;
-  const token = import.meta.env.VITE_API_KEY;
-  try { 
-    const response = await fetch(url, {
-          headers: {
-            Authorization: `token ${token}` // 🔴 Don't expose real tokens in production
-          }
-    });
-    const data = await response.json();
-    repository.value = data;
-    // console.log(data);
-  } catch (error) {
-    console.error('There has been a problem with your fetch operation:', error);
-  }
+  // const url = import.meta.env.VITE_API_URL;
+  // const token = import.meta.env.VITE_API_KEY;
+  // try { 
+  //   const response = await fetch(url, {
+  //         headers: {
+  //           Authorization: `token ${token}` // 🔴 Don't expose real tokens in production
+  //         }
+  //   });
+  //   const data = await response.json();
+  //   repository.value = data;
+  //   // console.log(data);
+  // } catch (error) {
+  //   console.error('There has been a problem with your fetch operation:', error);
+  // }
 };
 onMounted(() => {
   fetchData();
