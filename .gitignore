@@ -16,8 +16,13 @@ coverage
 
 /cypress/videos/
 /cypress/screenshots/
+<<<<<<< HEAD
 # Editor directories and files
 
+=======
+
+# Editor directories and files
+>>>>>>> 26395d2 (update new)
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -28,4 +33,8 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> 26395d2 (update new)

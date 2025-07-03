@@ -1,7 +1,11 @@
 {
   "recommendations": [
     "Vue.volar",
+<<<<<<< HEAD
     "vitest.explorer",
     "esbenp.prettier-vscode"
+=======
+    "vitest.explorer"
+>>>>>>> 26395d2 (update new)
   ]
 }

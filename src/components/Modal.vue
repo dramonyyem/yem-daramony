@@ -65,4 +65,8 @@ export default {
   font-size: 1.5rem;
   cursor: pointer;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> 26395d2 (update new)

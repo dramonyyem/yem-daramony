@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+<<<<<<< HEAD
 import ContactView from '@/views/ContactView.vue'
 import TestingView from '@/views/TestingView.vue'
+=======
+>>>>>>> 26395d2 (update new)
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +22,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+<<<<<<< HEAD
     {
       path: '/contact',
       name: 'contact',
@@ -29,6 +33,8 @@ const router = createRouter({
       name: 'testing',
       component: TestingView,
     }
+=======
+>>>>>>> 26395d2 (update new)
   ],
 })
 

@@ -10,5 +10,10 @@
     {
       "path": "./tsconfig.vitest.json"
     }
+<<<<<<< HEAD
   ]
+=======
+  ],
+  
+>>>>>>> 26395d2 (update new)
 }

@@ -1,16 +1,32 @@
 {
+<<<<<<< HEAD
   "name": "yem-daramony",
+=======
+  "name": "profile",
+>>>>>>> 26395d2 (update new)
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
+<<<<<<< HEAD
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -r https://github.com/dramonyyem/yem-daramony.git"
   },
   "dependencies": {
+=======
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "pinia": "^3.0.1",
+>>>>>>> 26395d2 (update new)
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
@@ -25,7 +41,10 @@
     "gh-pages": "^6.3.0",
     "jsdom": "^26.0.0",
     "npm-run-all2": "^7.0.2",
+<<<<<<< HEAD
     "prettier": "3.5.3",
+=======
+>>>>>>> 26395d2 (update new)
     "typescript": "~5.8.0",
     "vite": "^6.2.4",
     "vite-plugin-vue-devtools": "^7.7.2",
