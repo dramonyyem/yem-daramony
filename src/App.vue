@@ -14,7 +14,46 @@ interface Repo {
   html_url: string;
 }
 
-const repository = ref<Repo[]>([]);
+const repository = ref<Repo[]>([
+    {
+      id: 1,
+      name: "fe-coding-assessment",
+      description: "Case Study",
+      html_url : "https://github.com/dramonyyem/fe-coding-assessment"
+    },
+    {
+      id: 2,
+      name: "POS-html-css-javascript-jquery-",
+      description: "Case Study",
+      html_url : "https://github.com/dramonyyem/POS-html-css-javascript-jquery-"
+    },
+    {
+      id: 3,
+      name: "pos-system",
+      description: "Case Study",
+      html_url : "https://github.com/dramonyyem/pos-system"
+    },
+    {
+      id: 4,
+      name: "tasknote",
+      description: "Case Study",
+      html_url : "https://github.com/dramonyyem/tasknote"
+    },
+    {
+      id: 5,
+      name: "top-up-project",
+      description: "Case Study",
+      html_url : "https://github.com/dramonyyem/top-up-project"
+    }
+    ,
+    {
+      id: 6,
+      name: "mobile-bank-app",
+      description: "Case Study",
+      html_url : "https://github.com/dramonyyem/mobile-bank-app"
+    }
+  ]
+);
 const toggleTransform = () => {
   isRotated.value = !isRotated.value;
 };
@@ -22,7 +61,7 @@ const displayModal = () => {
   showModal.value = true;
 };
 
-const fetchData = async () => {
+const fetchData = () => {
   // const url = import.meta.env.VITE_API_URL;
   // const token = import.meta.env.VITE_API_TOKEN;
   // try { 
@@ -45,82 +84,87 @@ onMounted(() => {
 
 <template>
   <header>
-    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8 ">
+    <div class="mt-[60px]">
+
+    </div>
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
       <!-- <h1 class="text-[40px]">Portfolio</h1> -->
 
-      <div class="w-full h-[100px]"></div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <!-- Left column -->
-         <div class="w-5/10 w-full">
-            <img
-              :src="image"
-              alt="Mony's photo"
-              width="80%"
-            />
+      <div class="w-8/10 mx-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <!-- Left column -->
+           <div >
+              <img
+                class=""
+                :src="image"
+                alt="Mony's photo"
+              />
+          </div>
+          <div >
+            <div class="lg:mx-4 mx-auto">
+              <div class="text-[30px]">Hi, I'm Daramony</div>
+              <div class="text-[20px] py-2 font-bold">Software Developer</div>
+              <div>2+ Years</div>
+              <div>
+                Cambodian Software Developer experinces 2 years for coding.
+              </div>
+              <div>
+                E-mail : daramony.ydm@gmail.com
+              </div>
+              <div>
+                Phone : +855 512 188
+              </div>
+              <div class="h-[80px]"></div>
+              <div>
+                <h2>
+        <div class="flex items-center gap-2">
+          <a href="https://www.linkedin.com/in/yem-dara-mony-71b440200/" class="hover:text-blue-500" target="_blank">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+              linkedin
+            </div>
+          </a>
         </div>
-        <div class="w-5/10 mt-2">
-          <div class="w-[350px]">
-            <div class="text-[30px]">Hi, I'm Daramony</div>
-            <div class="text-[20px] py-2 font-bold">Software Developer</div>
-            <div>2+ Years</div>
-            <div>
-              Cambodian Software Developer experinces 2 years for coding.
-            </div>
-            <div>
-              E-mail : daramony.ydm@gmail.com
-            </div>
-            <div>
-              Phone : +855 512 188
-            </div>
-            <div class="h-[80px]"></div>
-            <div>
-              <h2>
-      <div class="flex items-center gap-2">
-        <a href="https://www.linkedin.com/in/yem-dara-mony-71b440200/" class="hover:text-blue-500" target="_blank">
+      </h2>
+      <h2>
+        <a href="https://github.com/dramonyyem" class="hover:text-blue-500" target="_blank"> 
           <div class="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-            </svg>
-            linkedin
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+                GitHub
+            </div>
           </div>
         </a>
+      </h2>
+      <div class="my-5">
+        <a :href="attach" target="_blank" class="text-white px-4 py-2 bg-blue-500">
+          Download CV
+        </a>
       </div>
-    </h2>
-    <h2>
-      <a href="https://github.com/dramonyyem" class="hover:text-blue-500" target="_blank"> 
-        <div class="flex items-center gap-2">
-          <div class="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-            </svg>
-              GitHub
-          </div>
-        </div>
-      </a>
-    </h2>
-    <div class="my-5">
-      <a :href="attach" target="_blank" class="text-white px-4 py-2 bg-blue-500">
-        Download CV
-      </a>
-    </div>
+              </div>
             </div>
           </div>
+  
+          <!-- Right column -->
+          
         </div>
-
-        <!-- Right column -->
-        
       </div>
     </div>
   </header>
 
   <main>
-    <div class="h-[150px]"></div>
 
-    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
-      <h2 class="text-[30px]">SKILL SETS</h2>
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
 
-      <div class="mt-[60px]">
+      <div class="mt-[60px] w-8/10 mx-auto">
+        <h2 class="text-[30px]">SKILL SETS</h2>
+
         <div class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
             <path d="M16 4.5a4.5 4.5 0 0 1-1.703 3.526L13 5l2.959-1.11q.04.3.041.61"/>
@@ -138,7 +182,7 @@ onMounted(() => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   :class="[
                     'bi bi-caret-right-fill transition-transform duration-300 ease-in-out',
-                    isRotated ? 'rotate-90' : ''
+                    isRotated ? '' : 'rotate-90'
                   ]"
                   viewBox="0 0 16 16">
                   <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -153,7 +197,7 @@ onMounted(() => {
 
         <!-- Skills Table -->
         <div class="mt-5">
-          <table class="w-full text-left border-collapse" :class="{'hidden': !isRotated}">
+          <table class="w-full text-left border-collapse" :class=" isRotated ? 'hidden' : ''"> 
             <thead>
               <tr>
                 <th class="border-b pb-2" width="200">Name</th>
@@ -244,10 +288,11 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
-      <h2 class="text-[30px]">Companies</h2>
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
 
-      <div class="mt-[60px]">
+      <div class="mt-[60px] mx-auto w-8/10">
+        <h2 class="text-[30px]">Companies</h2>
+
         <div class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
             <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"/>
@@ -277,10 +322,12 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
-      <h2 class="text-[30px]">Projects</h2>
+    <div class="mt-[60px]"></div>
 
-      <div class="mt-[60px]">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
+      
+      <div class="w-8/10 mx-auto">
+        <h2 class="text-[30px]">Projects</h2>
         <div class="flex items-center gap-2">
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
             <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"/>
@@ -294,7 +341,7 @@ onMounted(() => {
             <a :href="repo.html_url" target="_blank" class="block h-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold">{{ repo.name }}</h3>
-                <!-- <p class="text-sm text-gray-600">{{ repo.description || 'No description available' }}</p> -->
+                <p class="text-sm ">{{ repo.description || 'No description available' }}</p>
                 <div class="hover:underline">View on GitHub</div>
               </div>
             </a>
@@ -305,10 +352,10 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
-      <h2 class="text-[30px]">Education</h2>
-
-      <div class="mt-[60px]">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
+      
+      <div class="mt-[60px] mx-auto w-8/10">
+        <h2 class="text-[30px]">Education</h2>
         <div class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
             <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
