@@ -87,7 +87,7 @@ onMounted(() => {
     <div class="mt-[60px]">
 
     </div>
-    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
       <!-- <h1 class="text-[40px]">Portfolio</h1> -->
 
 
@@ -160,7 +160,7 @@ onMounted(() => {
 
   <main>
 
-    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
 
       <div class="mt-[60px] w-8/10 mx-auto">
         <h2 class="text-[30px]">SKILL SETS</h2>
@@ -288,7 +288,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
 
       <div class="mt-[60px] mx-auto w-8/10">
         <h2 class="text-[30px]">Companies</h2>
@@ -324,7 +324,7 @@ onMounted(() => {
     </div>
     <div class="mt-[60px]"></div>
 
-    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
       
       <div class="w-8/10 mx-auto">
         <h2 class="text-[30px]">Projects</h2>
@@ -352,7 +352,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-5/10">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
       
       <div class="mt-[60px] mx-auto w-8/10">
         <h2 class="text-[30px]">Education</h2>
