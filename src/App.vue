@@ -84,14 +84,14 @@ onMounted(() => {
 
 <template>
   <header>
-    <div class="mt-[60px]">
+    <div class="mt-[10px]">
 
     </div>
     <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
       <!-- <h1 class="text-[40px]">Portfolio</h1> -->
 
 
-      <div class="w-8/10 mx-auto">
+      <div class="w-full lg:w-8/10 mx-auto">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           <!-- Left column -->
@@ -162,7 +162,7 @@ onMounted(() => {
 
     <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
 
-      <div class="mt-[60px] w-8/10 mx-auto">
+      <div class="mt-[60px] w-full lg:w-8/10 mx-auto">
         <h2 class="text-[30px]">SKILL SETS</h2>
 
         <div class="flex items-center gap-2">
@@ -188,7 +188,7 @@ onMounted(() => {
                   <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                 </svg>
               </div>
-              <div class="text-[20px] ">
+              <div class="text-[17px]">
                 Programming Languages & Skills
               </div>
             </div>
@@ -290,7 +290,7 @@ onMounted(() => {
     </div>
     <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
 
-      <div class="mt-[60px] mx-auto w-8/10">
+      <div class="mt-[60px] mx-auto w-full lg:w-8/10">
         <h2 class="text-[30px]">Companies</h2>
 
         <div class="flex items-center gap-2">
@@ -301,7 +301,7 @@ onMounted(() => {
         </div>
 
         <hr class="mt-5 mb-2" />
-        <div class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4">
           <div class="w-full h-[200px] shadow-xl/20 rounded-lg hover:bg-blue-800 hover:text-white">
             <div class="p-4">
                 <h3 class="text-lg font-bold">Grep Tech Cambodia Co., LTD</h3>
@@ -326,7 +326,7 @@ onMounted(() => {
 
     <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
       
-      <div class="w-8/10 mx-auto">
+      <div class="w-full lg:w-8/10 mx-auto">
         <h2 class="text-[30px]">Projects</h2>
         <div class="flex items-center gap-2">
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
@@ -336,7 +336,7 @@ onMounted(() => {
         </div>
 
         <hr class="mt-5 mb-2" />
-        <div class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-6" >
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-6" >
           <div class="w-full h-[200px] shadow-xl/20 rounded-lg hover:bg-blue-800 hover:text-white" v-for="repo in repository" :key="repo.id">
             <a :href="repo.html_url" target="_blank" class="block h-full">
               <div class="p-4">
@@ -354,7 +354,7 @@ onMounted(() => {
     </div>
     <div class="mx-auto px-2 sm:px-6 lg:px-8 w-full lg:w-6/10">
       
-      <div class="mt-[60px] mx-auto w-8/10">
+      <div class="mt-[60px] mx-auto w-full lg:w-8/10">
         <h2 class="text-[30px]">Education</h2>
         <div class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
@@ -364,7 +364,7 @@ onMounted(() => {
         </div>
 
         <hr class="mt-5 mb-2" />
-        <div class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-4">
           <div class="w-full h-[200px] shadow-xl/20 rounded-lg hover:bg-blue-800 hover:text-white">
             <div class="p-4" >
               <a href="https://www.setecu.com" target="_blank" class="block h-full">
